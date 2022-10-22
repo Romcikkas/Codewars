@@ -1,0 +1,5 @@
+function addBinary(a, b) {
+    let decimal = a + b;
+    let binary = decimal.toString(2);
+    return binary;
+}

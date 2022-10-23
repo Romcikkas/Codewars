@@ -1,0 +1,10 @@
+function squareDigits(num) {
+    const numStr = num.toString();
+
+    let result = '';
+
+    for (let i = 0; i < numStr.length; i++) {
+        result += numStr[i] * numStr[i]
+    }
+    return +result
+}

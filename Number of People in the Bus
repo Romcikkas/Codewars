@@ -1,0 +1,7 @@
+var number = function (busStops) {
+    let result = 0;
+    busStops.forEach(el => {
+        result += el[0] - el[1]
+    })
+    return result;
+}

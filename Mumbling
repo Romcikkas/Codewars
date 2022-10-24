@@ -1,0 +1,14 @@
+function accum(s) {
+    const result = []
+    const toLow = s.toLowerCase();
+
+    for (let i = 0; i < toLow.length; i++) {
+        let toUp = toLow[i].toUpperCase();
+
+        for (let j = 0; j < i; j++) {
+            toUp += toLow[i];
+        }
+        result.push(toUp)
+    }
+    return result.join('-')
+}

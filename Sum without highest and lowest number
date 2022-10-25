@@ -1,0 +1,4 @@
+function sumArray(array) {
+    return Array.isArray(array) && array.length > 1 ?
+        array.reduce((sum, num) => sum += num, 0) - Math.max(...array) - Math.min(...array) : 0;
+}

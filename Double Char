@@ -1,0 +1,7 @@
+function doubleChar(str) {
+    let word = '';
+    str.split('').forEach(el => {
+        word += el += el
+    })
+    return word
+}
